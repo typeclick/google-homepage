@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        .nav {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .nav-links {
+            list-style: none;
+            flex: 0 0 auto;
+        }
+        .nav-links li {
+            display: inline-block;
+            padding: 0px 5px;
+        }
+        .sign-in {
+            display: inline-block;
+            line-height: 28px;
+            padding: 0 12px;
+            border-radius: 2px;
+            position: relative;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            color: #fff;
+            cursor: default;
+            text-decoration: none;
+            border: 1px solid #4285f4;
+            font-weight: bold;
+            outline: none;
+            background: -moz-linear-gradient(top, #4387fd, #4683ea);
+
+        }
+        .main {
+            width: 100%;
+            display: grid;
+            grid-template-rows: auto 30% 30%;
+            grid-row-gap: 50px;
+        }
+        .logo {
+            justify-self: center;
+            padding-top: 109px;
+        }
+        .searchbar {
+            background: #fff;
+            display: flex;
+            border: 1px solid #dfe1e5;
+            box-shadow: none;
+            border-radius: 24px;
+            z-index: 3;
+            height: 44px;
+            margin: 0 auto;
+            width: auto;
+        }
+        .inputbar {
+            background-color: transparent;
+            border: none;
+            margin: 0;
+            padding: 0;
+            color: rgba(0, 0, 0, .87);
+            word-wrap: break-word;
+            outline: none;
+            display: flex;
+            flex: 100%;
+            font-size: 16px;
+           
+        }
+        .inputbar input {
+            width: 427px;
+        }
+        .search-buttons {
+            justify-self: center;
+            height: 70px;
+                       
+        }
+        .gsearch {
+            background-color: #f2f2f2;
+            border: none;
+            color: #5F6368;
+            font-family: arial, sans-serif;
+            font-size: 14px;
+            margin: 11px 4px;
+            padding: 0 16px;
+            line-height: 27px;
+            height: 36px;
+            min-width: 54px;
+            text-align: center;
+            cursor: pointer;
+            user-select: none;
+        }
+        .lucky{
+            background-color: #f2f2f2;
+            border: none;            /*
+         position: fixed;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            background-color: #f2f2f2;
+            border-top: 1px solid #e4e4e4;
+            line-height: 40px;
+            min-width: 400px;
+            height: 40px;
+            display: flex;
+            justify-content: space-between; --> */
+            color: #5F6368;
+            font-family: arial, sans-serif;
+            font-size: 14px;
+            margin: 11px 4px;
+            padding: 0 16px;
+            line-height: 27px;
+            height: 36px;
+            min-width: 54px;
+            text-align: center;
+            cursor: pointer;
+            user-select: none;
+        }
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #f2f2f2;
+            height: 40px;
+        }
+        .footer-left {
+            float: left;
+        }
+        .footer-right {
+            float: right;
+        }
+        .footlinksleft {
+            list-style: none;
+        }
+        .footlinksleft li {
+            display: inline-block;
+        }
+        .footlinksleft a {
+            padding-left: 27px;
+        }
+        .footlinksright {
+            list-style: none;
+        }
+        .footlinksright li {
+            display: inline-block;
+        }
+        .footlinksright a {
+            padding-right: 27px;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+            font-family: arial, sans-serif;
+            font-size: 14px;
+        }
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<header>
+    <nav class="nav">
+        <ul class="nav-links">
+            <li> <a href="#">Gmail</a></li>
+            <li> <a href="#">Images</a></li>
+        </ul>
+        <!-- <img src="https://www.google.com/intl/en/about/products?tab=wh" alt="Google Apps"> -->
+        <button class="sign-in" type="submit">Sign in</button>
+    </nav>
+</header>
+<body>
+    <div class="main">
+        <div class="logo">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+        </div>
+        <div class="searchbar">
+            <div class="inputbar">
+                <input type="text" required>
+                <form action="send-search-here"></form>
+            </div>
+        </div>   
+        
+        <div class="search-buttons">
+            <button class="gsearch" type="submit">Google Search</button>
+            <button class="lucky" type="submit">I'm Feeling Generous</button>
+        </div>
+    </div>
+</body>
+<footer class="footer">
+    <div class="footer-left">
+        <ul class="footlinksleft">
+            <li><a href="#">Advertising</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">How Search Works</a></li> 
+        </ul>
+    </div>
+    <div class="footer-right">
+        <ul class="footlinksright">
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>  
+            <li><a href="#">Settings</a></li>
+        </ul>
+    </div>   
+</footer>
+</html>
